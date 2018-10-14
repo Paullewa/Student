@@ -10,6 +10,8 @@ namespace StudentSystem
     {
         static void Main(string[] args)
         {
+            
+            
         }
     }
 }
