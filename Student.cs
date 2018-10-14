@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+using System;
+using System.Runtime.Remoting.Messaging;
 
 namespace StudentSystem
 {
@@ -12,8 +10,10 @@ namespace StudentSystem
         public string Name { get; set; }
         public string Geburtstag { get; set; }
 
+
         private double Note { get; set; }
 
+       
         public Student(string Name, string Geburtstag, double Note)
         {
             this.Name = Name;
@@ -25,7 +25,8 @@ namespace StudentSystem
 
 
 
-        public bool Studerenden(Student student)
+        public bool Studierenden(Student student)
+
         {
             return this.Geburtstag.Equals(student.Geburtstag);
         }
