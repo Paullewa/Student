@@ -11,9 +11,10 @@ namespace StudentSystem
     {
         public string Name { get; set; }
         public string Geburtstag { get; set; }
-        private float Note { get; set; }
 
-        public Student(string Name, string Geburtstag, float Note)
+        private double Note { get; set; }
+
+        public Student(string Name, string Geburtstag, double Note)
         {
             this.Name = Name;
             this.Geburtstag = Geburtstag;
@@ -21,5 +22,13 @@ namespace StudentSystem
 
 
         }
+
+
+
+        public bool Studerenden(Student student)
+        {
+            return this.Geburtstag.Equals(student.Geburtstag);
+        }
+
     }
 }
